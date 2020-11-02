@@ -1,0 +1,15 @@
+# @format
+
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: 'circleci/node:latest'
+    steps:
+      - checkout
+      - run:
+          name: install
+          command: yarn
+      - run:
+          name: release
+          command: yarn run semantic-release || true

@@ -1,0 +1,15 @@
+{
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.formatOnSave": true,
+"editor.codeActionsOnSave": {
+  "source.fixAll": true
+},
+  "eslint.codeActionsOnSave.mode": "all",
+  "eslint.lintTask.options": "--cache .",
+  "eslint.packageManager": "yarn"
+}
